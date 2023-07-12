@@ -14,7 +14,7 @@ export default function Questions(props) {
     useEffect(() => {
         const tm = started ? setTimeout(function () {
             setHintVisible(true)
-        }, hintShowInMinutes) : null
+        }, hintShowInMinutes*60*1000) : null
 
         return () => {
             if (tm) clearTimeout(tm)
