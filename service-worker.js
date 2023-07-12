@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/speakersclub/precache-manifest.ffae07b4d21cfff3ba36503aa230b79c.js"
+  "/speakersclub/precache-manifest.d301fa70dde908b455256201d1cb7b63.js"
 );
 
 workbox.clientsClaim();
