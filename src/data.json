@@ -1,0 +1,76 @@
+{
+    "day": {
+        "word": "abscond",
+        "meaning": "To abscond is to leave, flee, or escape a place in secret and go into hiding. Often, someone is said to have absconded with something"
+    },
+    "hosts": [
+        {
+            "role": "HOST",
+            "name": "Prajesh Hamal"
+        },
+        {
+            "role": "ICEBREAKER",
+            "name": "Pranav Pudaasinai"
+        },
+        {
+            "role": "ICEBREAKER",
+            "name": "Bipin Khadka"
+        },
+        {
+            "role": "TABLE TOPIC MASTER",
+            "name": "Prayatna Koirala"
+        },
+        {
+            "role": "GRAMMARIAN",
+            "name": "Manish Human"
+        }
+    ],
+    "questionTimeInMinutes":5,
+    "questions": [
+        {
+            "id": 1,
+            "title": "The zombie apocalypse is coming. Who are the three people you want on your team in order to survive? The team can be from the audience as well/ any one in the planet.",
+            "hints": [
+                "have to take care of food, water and shelter,electricity?",
+                " Rajesh dai on team!? ",
+                "what to do for mental peace"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "You have been accused of peeing on a government property. They do not have a solid proof. They are interrogating you. Prove to them that you didn't do it.",
+            "hints": [
+                "make up an alibi (eg. get your friend to back you up)",
+                " try to argue its not urine on the wall but water",
+                "avert the blame on the police officer?"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "You have time travelled to 300 years ago in a time machine chair without wearing any clothes. There are several people looking at you. Prove to them/us you're from the future.",
+            "hints": [
+                "argue that you appeared out of nowhere",
+                " travel in time 5 minutes later to prove it to them",
+                " tell them of technology?"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "You are in an outing. One of your friend is too drunk /high. How do you calm him down?",
+            "hints": [
+                "ask him if he needs water or anything to eat",
+                " drink/ get high with him to go through it together",
+                "take him outdoors, describe how your steps could help"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "You just opened up a tea shop in the streets of Boudha. How do you plan to grow your business?",
+            "hints": [
+                "market in social media",
+                " have some offers, make tea better",
+                "ask friends to sit there everyday. go crazy on your imagination!"
+            ]
+        }
+    ]
+}

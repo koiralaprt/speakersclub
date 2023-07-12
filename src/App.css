@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  font-family: monospace;
+  background-color: #282c34;
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  font-size: 20px;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -14,8 +23,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +39,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.lfbtn {
+  padding: 10px 20px;
+  outline: none;
+  background-color: #00a2ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.card {
+  height: 75px;
+  width: 75px;
+  border: 1px solid #f1f6fa;
+  border-radius: 20px;
+  background-color: white;
+  color:red;
+  padding: 20px;
+  margin: 10px;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
