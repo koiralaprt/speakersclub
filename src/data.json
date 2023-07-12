@@ -1,20 +1,32 @@
 {
     "day": {
-        "word": "abscond",
-        "meaning": "To abscond is to leave, flee, or escape a place in secret and go into hiding. Often, someone is said to have absconded with something"
+        "word": "eloquence",
+        "meaning": "the quality of delivering a clear, strong message: \n        - She was renowned for her eloquence and beauty.\n        - His wit and eloquence made it a joy to be around him.\n        - He is a man of charm, intelligence, and rare eloquence."
     },
     "hosts": [
         {
             "role": "HOST",
-            "name": "Prajesh Hamal"
+            "name": "Amit Joshi"
+        },
+        {
+            "role": "TIMER",
+            "name": "Subin Dangol"
+        },
+        {
+            "role": "EVALUATOR",
+            "name": "Sparsha Dotel"
         },
         {
             "role": "ICEBREAKER",
-            "name": "Pranav Pudaasinai"
+            "name": "Pranav Pudasaini"
         },
         {
-            "role": "ICEBREAKER",
-            "name": "Bipin Khadka"
+            "role": "MANDATORY_SPEAKER",
+            "name": "Bipin Pandey"
+        },
+        {
+            "role": "LEVEL2",
+            "name": "Manish Chaulagain"
         },
         {
             "role": "TABLE TOPIC MASTER",
@@ -22,11 +34,11 @@
         },
         {
             "role": "GRAMMARIAN",
-            "name": "Manish Human"
+            "name": "Bibek Mishra"
         }
     ],
-    "questionTimeInMinutes":5,
-    "hintShowInMinutes":2,
+    "questionTimeInMinutes": 5,
+    "hintShowInMinutes": 2,
     "questions": [
         {
             "id": 1,

@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import Card from '../components/card';
 import Countdown, { zeroPad } from 'react-countdown';
+import Button from '../components/button';
 
 
 export default function Questions(props) {
     const { usedQuestions, updateUsedQuestions, data } = props;
-    const { questions, questionTimeInMinutes,hintShowInMinutes } = data;
+    const { questions, questionTimeInMinutes, hintShowInMinutes } = data;
     const [selectedQuestion, setSelectedQuestion] = useState(null);
     const [started, setStarted] = useState(false);
     const [now, setNow] = useState(0)
     const [hintVisible, setHintVisible] = useState(false);
-
+    const [clickable, setClickable] = useState(true)
     useEffect(() => {
         const tm = started ? setTimeout(function () {
             setHintVisible(true)
-        }, hintShowInMinutes*60*1000) : null
+        }, hintShowInMinutes * 60 * 1000) : null
 
         return () => {
             if (tm) clearTimeout(tm)
@@ -30,8 +31,9 @@ export default function Questions(props) {
                 <div style={{ border: '1px solid green', padding: '20px', width: '200px', borderRadius: '20px', margin: '5px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {questions.map(item => {
                         const used = usedQuestions.includes(item.id);
-                        return <Card key={item.id} style={{ backgroundColor: used ? !!selectedQuestion && selectedQuestion.id === item.id ? 'purple' : 'grey' : 'green', color: 'white', borderRadius: '50%' }} onClick={() => {
-                            if (!used) {
+                        return <Card key={item.id} style={{ backgroundColor: used ? !!selectedQuestion && selectedQuestion.id === item.id ? 'purple' : 'grey' : 'green', color: 'white', borderRadius: '50%', cursor: clickable ? 'pointer' : 'no-drop' }} onClick={() => {
+                            if (!used && !!clickable) {
+                                setClickable(false)
                                 setStarted(false)
                                 setHintVisible(false)
                                 setNow(0)
@@ -70,6 +72,7 @@ export default function Questions(props) {
                                 <span style={{ fontSize: '3em' }}>{zeroPad(minutes)}:{zeroPad(seconds)}</span>
                             </div>
                         }}
+                        onComplete={() => setClickable(true)}
                     /> :
                         <div style={{ padding: '10px 20px', backgroundColor: 'black', color: 'white' }}>
                             <span style={{ fontSize: '3em' }}>00:00</span>
@@ -83,6 +86,14 @@ export default function Questions(props) {
                             setNow(Date.now())
                         }
                     }} />
+
+                    <div style={{ position: 'absolute', bottom: '55px' }}>
+
+                        <Button text="Quit" onClick={() => {
+                            setClickable(true);
+                            setSelectedQuestion(null)
+                        }}></Button>
+                    </div>
                 </div>
             </div>
         </div>
