@@ -5,7 +5,7 @@ import Countdown, { zeroPad } from 'react-countdown';
 
 export default function Questions(props) {
     const { usedQuestions, updateUsedQuestions, data } = props;
-    const { questions, questionTimeInMinutes } = data;
+    const { questions, questionTimeInMinutes,hintShowInMinutes } = data;
     const [selectedQuestion, setSelectedQuestion] = useState(null);
     const [started, setStarted] = useState(false);
     const [now, setNow] = useState(0)
@@ -14,7 +14,7 @@ export default function Questions(props) {
     useEffect(() => {
         const tm = started ? setTimeout(function () {
             setHintVisible(true)
-        }, 20000) : null
+        }, hintShowInMinutes) : null
 
         return () => {
             if (tm) clearTimeout(tm)

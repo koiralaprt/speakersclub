@@ -26,6 +26,7 @@
         }
     ],
     "questionTimeInMinutes":5,
+    "hintShowInMinutes":2,
     "questions": [
         {
             "id": 1,
