@@ -37,8 +37,8 @@
             "name": "Bibek Mishra"
         }
     ],
-    "questionTimeInMinutes": 5,
-    "hintShowInMinutes": 2,
+    "questionTimeInMinutes": 2,
+    "hintShowInMinutes": 1,
     "questions": [
         {
             "id": 1,

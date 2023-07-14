@@ -35,13 +35,14 @@ function App() {
     localStorage.setItem(thisDay, JSON.stringify(newUsedQns));
   }
 
+  const max = Object.keys(pagemap).length-1;
   return (
     <div className="App">
       <Component page={page} data={data} updateUsedQuestions={updateUsedQuestions} usedQuestions={usedQuestions} />
-      {page !== 3 && page !== 0 && <div style={{ position: 'absolute', left: '10px', bottom: '10px', cursor: 'pointer' }} onClick={() => setPage(page > 0 ? page - 1 : 0)}>
+      {page !== max && page !== 0 && <div style={{ position: 'absolute', left: '10px', bottom: '10px', cursor: 'pointer' }} onClick={() => setPage(page > 0 ? page - 1 : 0)}>
         Go back
       </div>}
-      {page !== 3 && <div style={{ position: 'absolute', right: '10px', bottom: '10px' }}><Button text="Next" onClick={() => setPage(page < 3 ? page + 1 : page)} /></div>}
+      {page !== max && <div style={{ position: 'absolute', right: '10px', bottom: '10px' }}><Button text="Next" onClick={() => setPage(page < max ? page + 1 : page)} /></div>}
     </div>
   );
 }
