@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6a665790d3bf779d48f4",
+    "revision": "2947b0ad3b3a655a0eac",
     "url": "/speakersclub/static/css/main.d194e8bb.chunk.css"
   },
   {
-    "revision": "6a665790d3bf779d48f4",
-    "url": "/speakersclub/static/js/main.6dbe4ee1.chunk.js"
+    "revision": "2947b0ad3b3a655a0eac",
+    "url": "/speakersclub/static/js/main.586cb47a.chunk.js"
   },
   {
     "revision": "a697c7c4c0a7ba6efef2",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/speakersclub/static/js/3.6c5d1d50.chunk.js"
   },
   {
-    "revision": "78c6d23476904fa63d62eccba4624975",
+    "revision": "9a4e90a2a34da14ca68fa6ad9a5f3af1",
     "url": "/speakersclub/index.html"
   }
 ];
