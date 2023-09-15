@@ -1,3 +1,6 @@
+Use node16
+
+
 data.json file contains the information for this small application.
 
 For word of the day, you can edit the day->word and meaning keys 
