@@ -1,5 +1,5 @@
 {
-  "main.css": "/speakersclub/static/css/main.94f58c0d.chunk.css",
+  "main.css": "/speakersclub/static/css/main.9385f4c5.chunk.css",
   "main.js": "/speakersclub/static/js/main.28ea21de.chunk.js",
   "main.js.map": "/speakersclub/static/js/main.28ea21de.chunk.js.map",
   "runtime~main.js": "/speakersclub/static/js/runtime~main.d8b2897e.js",
@@ -9,7 +9,7 @@
   "static/js/3.6c5d1d50.chunk.js": "/speakersclub/static/js/3.6c5d1d50.chunk.js",
   "static/js/3.6c5d1d50.chunk.js.map": "/speakersclub/static/js/3.6c5d1d50.chunk.js.map",
   "index.html": "/speakersclub/index.html",
-  "precache-manifest.0d1ebc139b02fc7968de31975fc159b8.js": "/speakersclub/precache-manifest.0d1ebc139b02fc7968de31975fc159b8.js",
+  "precache-manifest.4a5a186191c52fe01d43ed28b0b18c9c.js": "/speakersclub/precache-manifest.4a5a186191c52fe01d43ed28b0b18c9c.js",
   "service-worker.js": "/speakersclub/service-worker.js",
-  "static/css/main.94f58c0d.chunk.css.map": "/speakersclub/static/css/main.94f58c0d.chunk.css.map"
+  "static/css/main.9385f4c5.chunk.css.map": "/speakersclub/static/css/main.9385f4c5.chunk.css.map"
 }
