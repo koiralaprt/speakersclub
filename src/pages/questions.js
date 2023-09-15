@@ -28,7 +28,7 @@ export default function Questions(props) {
                 Table Topics
             </h1>
             <div style={{ display: 'flex', height: '80vh' }}>
-                <div style={{ border: '1px solid green', padding: '20px', width: '200px', borderRadius: '20px', margin: '5px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',overflowY:'scroll' }}>
+                <div style={{ border: '1px solid green', padding: '20px', width: '200px', borderRadius: '20px 0 0 20px', margin: '5px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center',overflowY:'scroll' }}>
                     {questions.map(item => {
                         const used = usedQuestions.includes(item.id);
                         return <Card key={item.id} style={{ backgroundColor: used ? !!selectedQuestion && selectedQuestion.id === item.id ? 'purple' : 'grey' : 'green', color: 'white', borderRadius: '50%', cursor: clickable ? 'pointer' : 'no-drop' }} onClick={() => {
