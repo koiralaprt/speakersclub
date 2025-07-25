@@ -1,45 +1,31 @@
 {
-  "name": "speakersclub",
-  "version": "0.1.0",
+  "name": "speakersclubvite",
   "private": true,
-  "homepage": "http://koiralaprt.github.io/speakersclub",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-countdown": "^2.3.5",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-countdown": "^2.3.5"
   },
   "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "vite": "^7.0.4",
     "gh-pages": "^5.0.0"
   }
 }
